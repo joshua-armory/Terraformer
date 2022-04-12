@@ -9,3 +9,7 @@ resource "aws_instance" "example" {
     Name = "TF_test"
   }
 }
+
+output "instance_ip_addr" {
+  value = aws_instance.example.private_ip
+}
