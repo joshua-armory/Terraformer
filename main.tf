@@ -1,6 +1,5 @@
 provider "aws" {
   region     = "us-east-1"
-  source  = "hashicorp/aws"
 }
 
 resource "aws_instance" "example" {
